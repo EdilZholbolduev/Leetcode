@@ -16,3 +16,23 @@ var numberOfArithmeticSlices = function(nums) {
    }
    return total;
 };
+
+// Remove Colored Pieces if Both Neighbors are the Same Color
+
+
+var winnerOfGame = function(colors) {
+    let As=0;
+    let Bs=0;
+
+    for(let i=1;i<colors.length-1;i+=1){
+        if(colors[i-1]==colors[i] && colors[i]==colors[i+1]){
+            if(colors[i]==='A'){
+                As++;
+            }
+            else {
+                Bs++;
+            }
+        }
+    }
+    return As>Bs;
+}
