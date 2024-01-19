@@ -1,4 +1,4 @@
-//Climbing Stairs 
+// Climbing Stairs 
 
 var climbStairs = function(n) {
    let a = 0;
